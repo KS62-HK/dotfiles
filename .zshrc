@@ -1,5 +1,5 @@
 # Auto launch hyprland when logging in on tty1
-[ "$(tty)" = "/dev/tty1" ] && exec Hyprland
+# [ "$(tty)" = "/dev/tty1" ] && exec Hyprland
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
