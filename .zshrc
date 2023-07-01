@@ -84,6 +84,7 @@ HIST_STAMPS="yyyy/mm/dd"
 plugins=(
 git
 zsh-autosuggestions
+zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -122,7 +123,7 @@ unsetopt beep
 bindkey -e
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/ks62/.zshrc'
+zstyle :compinstall filename '$HOME/.zshrc'
 
 autoload -Uz compinit
 compinit
@@ -132,10 +133,10 @@ alias ls='ls --color=auto'
 alias ll='ls -lav --ignore=..'   # show long listing of all except ".."
 alias l='ls -lav --ignore=.?*'   # show long listing but no hidden dotfiles except "."
 alias discord='Exec=/usr/bin/discord\ --ozone-platform=wayland'
-alias cylheim='wine /home/ks62/Documents/cylheim 2.0/Cylheim.exe'
-alias cce='wine /home/ks62/Documents/ccedev/cce.exe'
-alias cytoidplayer='wine /home/ks62/Documents/Cytoid/CytoidPlayer/CytoidPlayer.exe'
-alias bpm='wine "/home/ks62/Documents/TimingAnlyz 0.32.4/TimingAnlyz 0.32.4.exe"'
+alias cylheim='wine $HOME/Documents/cylheim 2.0/Cylheim.exe'
+alias cce='wine $HOME/Documents/ccedev/cce.exe'
+alias cytoidplayer='wine $HOME/Documents/Cytoid/CytoidPlayer/CytoidPlayer.exe'
+alias bpm='wine "$HOME/Documents/TimingAnlyz 0.32.4/TimingAnlyz 0.32.4.exe"'
 alias dotf='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -145,4 +146,4 @@ POWERLEVEL9K_INSTANT_PROMPT=quiet
 
 echo 
 fastfetch
-source /home/ks62/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
