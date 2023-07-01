@@ -10,9 +10,12 @@ Coming Soon™
 #### "This application requires dotnet 6"
 Cylheim requires dotnet 6/7, so you should install the version it prompts you to install. (via wine of cause)\
 *But,* even after installing that, it might still says dotnet is missing.\
+
 Turns out Cylheim also requires `hostfxr.dll` in `/usr/share/dotnet/host/fxr/<dotnet version>`, in which wine is unable to write into. (or maybe it's the one installed from your package manager, I am not sure)\
 **(Side note: do not run wine with sudo for this, reason explained [here](https://wiki.winehq.org/FAQ#Should_I_run_Wine_as_root.3F).)** \
+
 To fix this, simply put `hostfxr.dll` in said directory (either by downloading it online or copying the one in `~/.wine/drive_c/Program Files/dotnet/host/fxr/<dotnet version>`).\
+
 Note that Cylheim could stop working again when a dotnet upgrade is installed, you should be able to fix it by repeating this section.
 
 #### Stuck on splash screen
