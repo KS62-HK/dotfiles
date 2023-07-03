@@ -33,7 +33,7 @@ Follow these steps:
 1. Install a [.NET Desktop Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/7.0) version that is exactly or higher than `7.0.0-preview.4`. (.NET Runtime might also be needed, I am not sure.)
 2. Intstall Cylheim with the .exe file.
 3. Download and put `msvcr120_clr0400.dll` in `~/.wine/drive_c/windows/system32`.
-4. Download and put `wminet_utils.dll` in `/home/ks62/.wine/drive_c/windows/Microsoft.NET/Framework64/<version number>`.
+4. Download and put `wminet_utils.dll` in `~/.wine/drive_c/windows/Microsoft.NET/Framework64/<version number>`.
 
 #### Constant screen flickering
 No fixes as of now.
