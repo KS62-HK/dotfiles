@@ -26,6 +26,15 @@ For me, Cylheim last worked on wine 8.4 and up so you might want to upgrade to t
 Either Cylheim or wine has a bug where Cylheim would crash after a single playback in any version higher than v2.0.1. (Specifically the ones with a .exe installer)\
 Currently, the only solution is to use the zipped version (v2.0.0 or v1.8.4) which does not contain this bug.
 
+#### v3.0?
+It is possible to run Cylheim v3.0.0+ after adding some files, unfortunately this version also suffers from the problem above.
+
+Follow these steps:
+1. Install a [.NET Desktop Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/7.0) version that is exactly or higher than `7.0.0-preview.4`. (.NET Runtime might also be needed, I am not sure.)
+2. Intstall Cylheim with the .exe file.
+3. Download and put `msvcr120_clr0400.dll` in `~/.wine/drive_c/windows/system32`.
+4. Download and put `wminet_utils.dll` in `/home/ks62/.wine/drive_c/windows/Microsoft.NET/Framework64/<version number>`.
+
 #### Constant screen flickering
 No fixes as of now.
 
