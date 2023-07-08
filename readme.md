@@ -9,15 +9,16 @@ Coming Soon™
 
 #### "This application requires dotnet 6"
 
-Cylheim requires dotnet 6/7, so you should install the version it prompts you to install. (Run `winetricks dotnet6 dotnet7 dotnetdesktop6 dotnetdesktop7`)\
-*But,* even after installing that, it might still say dotnet is missing.
+Cylheim requires dotnet 6/7, so you should install the version it prompts you to install. (or run `winetricks dotnet6 dotnet7 dotnetdesktop6 dotnetdesktop7`)
 
-Turns out, Cylheim also requires `hostfxr.dll` in its dotnet directory, but since `wine` default its dotnet directory to be in `/usr/share/dotnet/`, and Linux does not install `hostfxr.dll` by default, Cylheim reports that it can't launch.
+*But,* even after installing that, it *might* still say dotnet is missing.
+
+Turns out, Cylheim also requires `hostfxr.dll` (and potentially more files) in its dotnet directory, and if you have install dotnet via your package manager, `wine` will default its dotnet directory to be in `/usr/share/dotnet/`. Since the linux versin does not provide said dll, Cylheim reports that it can't launch.
 
 There are two ways to fix this:
 
 1. Add `DOTNET_ROOT="C:\Program Files\dotnet"` behind the `wine` command before executing. (e.g. `DOTNET_ROOT="C:\Program Files\dotnet" wine /path/to/Cylheim`)
-2. Put `hostfxr.dll` in `/usr/share/dotnet/host/fxr/<dotnet version>` (either by downloading it online or copying the one in `~/.wine/drive_c/Program Files/dotnet/host/fxr/<dotnet version>`).
+2. Put the required files in `/usr/share/dotnet/host/fxr/<dotnet version>` (either by downloading it online or copying the one in `~/.wine/drive_c/Program Files/dotnet/host/fxr/<dotnet version>`).
 
 #### Stuck on splash screen
 Your wine version is too old!\
@@ -43,5 +44,4 @@ No fixes as of now.\
 ### CytoidPlayer (Wine)
 
 #### Missing text on the buttons
-You need to install the required fonts in wine first.\
-I am not sure what font it is, so I just run `winetricks allfonts` and it works.
+You need to install the required fonts in wine first, and it seems that `winetricks corefonts` does the trick.
