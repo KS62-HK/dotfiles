@@ -13,12 +13,13 @@ Cylheim requires dotnet 6/7, so you should install the version it prompts you to
 
 *But,* even after installing that, it *might* still say dotnet is missing.
 
-Turns out, Cylheim also requires `hostfxr.dll` (and potentially more files) in its dotnet directory, and if you have install dotnet via your package manager, `wine` will default its dotnet directory to be in `/usr/share/dotnet/`. Since the linux versin does not provide said dll, Cylheim reports that it can't launch.
+Turns out, Cylheim also requires `hostfxr.dll` (and potentially more files) in its dotnet directory, and if you have dotnet installed via your package manager, `wine` will default its dotnet directory to be in `/usr/share/dotnet/`. Since the linux version does not provide said dll, Cylheim reports that it can't launch.
 
-There are two ways to fix this:
+There are three ways to fix this:
 
-1. Add `DOTNET_ROOT="C:\Program Files\dotnet"` behind the `wine` command before executing. (e.g. `DOTNET_ROOT="C:\Program Files\dotnet" wine /path/to/Cylheim`)
-2. Put the required files in `/usr/share/dotnet/host/fxr/<dotnet version>` (either by downloading it online or copying the one in `~/.wine/drive_c/Program Files/dotnet/host/fxr/<dotnet version>`).
+1. Put `DOTNET_ROOT="C:\Program Files\dotnet"` in `/etc/environment`. (Requires reboot)
+2. Add `DOTNET_ROOT="C:\Program Files\dotnet"` behind the `wine` command before executing. (e.g. `DOTNET_ROOT="C:\Program Files\dotnet" wine /path/to/Cylheim`)
+3. Put the required files in `/usr/share/dotnet/host/fxr/<dotnet version>` (either by downloading it online or copying the one in `~/.wine/drive_c/Program Files/dotnet/host/fxr/<dotnet version>`).
 
 #### Stuck on splash screen
 Your wine version is too old!\
