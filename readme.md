@@ -41,8 +41,8 @@ Follow these steps:
 4. Download and put `wminet_utils.dll` in `~/.wine/drive_c/windows/Microsoft.NET/Framework64/<version number>`.
 
 #### Constant screen flickering
-No fixes as of now.\
-(Seems to be less severe on v3.0.0+, though.)
+If you're using a window manager.\
+Try "maximizing" the window.
 
 ### CytoidPlayer (Wine)
 
