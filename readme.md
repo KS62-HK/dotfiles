@@ -22,8 +22,8 @@ There are three ways to fix this:
 3. Put the required files in `/usr/share/dotnet/host/fxr/<dotnet version>` (either by downloading it online or copying the one in `~/.wine/drive_c/Program Files/dotnet/host/fxr/<dotnet version>`).
 
 #### Stuck on splash screen
-Your wine version is too old!\
-For me, Cylheim last worked on wine 8.4 and up, so you might want to upgrade to that.
+Likely due to [this](https://bugs.winehq.org/show_bug.cgi?id=52396) `wine` bug.\
+Use `wine-staging` to fix.
 
 #### Crashes after one playback
 Either Cylheim or wine has a bug where Cylheim would crash after a single playback in any version higher than v2.0.1. (Specifically the ones with a .exe installer)\
