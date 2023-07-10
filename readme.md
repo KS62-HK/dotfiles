@@ -29,6 +29,8 @@ Use `wine-staging` to fix.
 Either Cylheim or wine has a bug where Cylheim would crash after a single playback in any version higher than v2.0.1. (Specifically the ones with a .exe installer)\
 Currently, the only solution is to use the zipped version (v2.0.0 or v1.8.4) which does not contain this bug.
 
+And before you ask. **No, using a 32bit wine prefix does not fix this.**
+
 #### v3.0.0?
 It is possible to run Cylheim v3.0.0+ after adding some files, unfortunately this version also suffers from the problem above.
 
