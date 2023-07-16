@@ -1,8 +1,9 @@
 font=Noto Sans Regular 10
-border-radius=5
 background-color=#282a36
 text-color=#f8f8f2
+border-radius=5
 border-color=#282a36
+border-size=4
 
 [urgency=low]
 border-color=#8be9fd
