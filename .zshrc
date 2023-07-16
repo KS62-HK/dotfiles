@@ -1,3 +1,7 @@
+# fastfetch (NEEDS to be on top or logo won't show)
+echo
+fastfetch -l $HOME/.logo.png --logo-padding-left 4 --logo-padding-right 1
+
 # Auto launch hyprland when logging in on tty1
 # [ "$(tty)" = "/dev/tty1" ] && exec Hyprland
 
@@ -142,8 +146,7 @@ alias dotf='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-POWERLEVEL9K_INSTANT_PROMPT=quiet
 
-echo 
-fastfetch
+
+
 
