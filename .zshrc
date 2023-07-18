@@ -1,6 +1,6 @@
 # fastfetch (NEEDS to be on top or logo won't show)
 echo
-fastfetch -l $HOME/.logo.png --logo-padding-left 4 --logo-padding-right 1
+fastfetch
 
 # Auto launch hyprland when logging in on tty1
 # [ "$(tty)" = "/dev/tty1" ] && exec Hyprland
