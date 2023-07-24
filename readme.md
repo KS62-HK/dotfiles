@@ -9,7 +9,7 @@ Coming Soon™
 
 #### "This application requires dotnet 6"
 
-Cylheim requires dotnet 6/7, so you should install the version it prompts you to install. (or run `winetricks dotnet6 dotnet7 dotnetdesktop6 dotnetdesktop7`)
+Cylheim requires dotnet (desktop) 6/7, so you should install the version it prompts you to install. (or run `winetricks dotnetdesktop6 dotnetdesktop7`)
 
 *But,* even after installing that, it *might* still say dotnet is missing.
 
@@ -17,13 +17,12 @@ Turns out, Cylheim also requires `hostfxr.dll` (and potentially more files) in i
 
 There are three ways to fix this:
 
-1. Put `DOTNET_ROOT="C:\Program Files\dotnet"` in `/etc/environment`. (Requires reboot)
+1. Put `DOTNET_ROOT="C:\Program Files\dotnet"` in `/etc/environment`. (Requires logout/reboot)
 2. Add `DOTNET_ROOT="C:\Program Files\dotnet"` behind the `wine` command before executing. (e.g. `DOTNET_ROOT="C:\Program Files\dotnet" wine /path/to/Cylheim`)
 3. Put the required files in `/usr/share/dotnet/host/fxr/<dotnet version>` (either by downloading it online or copying the one in `~/.wine/drive_c/Program Files/dotnet/host/fxr/<dotnet version>`).
 
 #### Stuck on splash screen
-Likely due to [this](https://bugs.winehq.org/show_bug.cgi?id=52396) `wine` bug.\
-Use `wine-staging` to fix.
+Likely due to [this](https://bugs.winehq.org/show_bug.cgi?id=52396) `wine` bug. For now, install `wine-staging` instead of `wine` to fix this.
 
 #### Crashes after one playback
 Either Cylheim or wine has a bug where Cylheim would crash after a single playback in any version higher than v2.0.1. (Specifically the ones with a .exe installer)\
@@ -35,14 +34,13 @@ And before you ask. **No, using a 32bit wine prefix does not fix this.**
 It is possible to run Cylheim v3.0.0+ after adding some files, unfortunately this version also suffers from the problem above.
 
 Follow these steps:
-1. Install a [.NET Runtime *and* .NET Desktop Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/7.0) version that is exactly or higher than `7.0.0-preview.4`.
+1. Install a [.NET Desktop Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/7.0) version that is exactly or higher than `7.0.0-preview.4`.
 2. Install Cylheim with the .exe file.
 3. Download and put `msvcr120_clr0400.dll` in `~/.wine/drive_c/windows/system32`.
 4. Download and put `wminet_utils.dll` in `~/.wine/drive_c/windows/Microsoft.NET/Framework64/<version number>`.
 
 #### Constant screen flickering
-If you're using a window manager.\
-Try "maximizing" the window.
+Seems to be the consequences of wine not yet supporting wayland [(source)](https://wiki.archlinux.org/title/wine#Xwayland_problems), maybe it doesn't happen on x11 but I don't have time to test that.
 
 ### CytoidPlayer (Wine)
 
