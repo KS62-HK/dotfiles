@@ -4,7 +4,7 @@
     "margin-left": 5,
     "margin-right": 5,
     "margin-top": 5,
-	"modules-left": ["idle_inhibitor","cpu","memory", "mpd"],
+	"modules-left": ["cpu","memory", "mpd"],
 	"modules-center": ["wlr/workspaces"],
 	"modules-right": ["tray", "pulseaudio","disk","network","battery","clock"],
     "wlr/workspaces": {
@@ -99,13 +99,6 @@
      	"on-click":"mpc toggle",
      	"tooltip-format": "MPD (connected)",
      	"tooltip-format-disconnected": "MPD (disconnected)"
-     },
-     "idle_inhibitor": {
-        "format": "{icon} ",
-        "format-icons": {
-            "activated": "",
-            "deactivated": ""
-        }
-    }
+     }
 }
 
