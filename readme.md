@@ -25,7 +25,7 @@ There are three ways to fix this:
 Likely due to [this](https://bugs.winehq.org/show_bug.cgi?id=52396) `wine` bug. For now, install `wine-staging` instead of `wine` to fix this.
 
 #### Crashes after one playback
-Install` dotnet40` (or `dotdet48` if you want) with `winetricks` to fix.
+Install `dotnet40` (or `dotdet48` if you want) with `winetricks` to fix.
 
 #### v3.0.0?
 Same as above.
