@@ -24,25 +24,11 @@ There are three ways to fix this:
 #### Stuck on splash screen
 Likely due to [this](https://bugs.winehq.org/show_bug.cgi?id=52396) `wine` bug. For now, install `wine-staging` instead of `wine` to fix this.
 
-#### ~~Crashes after one playback~~
-**seems to be fixed, I have no idea how and why though.**
-<details>
-<summary>Old text</summary>
-Either Cylheim or wine has a bug where Cylheim would crash after a single playback in any version higher than v2.0.1. (Specifically the ones with a .exe installer)
-<br>
-Currently, the only solution is to use the zipped version (v2.0.0 or v1.8.4) which does not contain this bug.
-<br>
-And before you ask. <b>No, using a 32bit wine prefix does not fix this.</b>
-</details>
+#### Crashes after one playback
+Install` dotnet40` (or `dotdet48` if you want) with `winetricks` to fix.
 
 #### v3.0.0?
-It is possible to run Cylheim v3.0.0+ after adding some files. 
-
-Follow these steps:
-1. Install a [.NET Desktop Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/7.0) version that is exactly or higher than `7.0.0-preview.4`. (Alternatively run `winetricks dotnetdesktop7`)
-2. Install Cylheim with the .exe file.
-3. Download and put `msvcr120_clr0400.dll` in `~/.wine/drive_c/windows/system32`.
-4. Download and put `wminet_utils.dll` in `~/.wine/drive_c/windows/Microsoft.NET/Framework64/<version number>`.
+Same as above.
 
 #### Constant screen flickering
 Seems to be the consequences of wine not yet supporting wayland [(source)](https://wiki.archlinux.org/title/wine#Xwayland_problems), maybe it doesn't happen on x11 but I don't have time to test that.
