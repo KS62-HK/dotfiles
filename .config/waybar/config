@@ -5,9 +5,9 @@
     "margin-right": 5,
     "margin-top": 5,
 	"modules-left": ["cpu","memory", "mpd"],
-	"modules-center": ["wlr/workspaces"],
+	"modules-center": ["hyprland/workspaces"],
 	"modules-right": ["tray", "pulseaudio","disk","network","battery","clock"],
-    "wlr/workspaces": {
+    "hyprland/workspaces": {
         "format": "{name}",
         "on-click": "activate",
         "sort-by-number": true
