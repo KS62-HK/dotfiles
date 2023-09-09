@@ -4,14 +4,21 @@
     "margin-left": 5,
     "margin-right": 5,
     "margin-top": 5,
-	"modules-left": ["cpu","memory", "mpd"],
+	"modules-left": ["hyprland/window", "mpd"],
 	"modules-center": ["hyprland/workspaces"],
-	"modules-right": ["tray", "pulseaudio","disk","network","battery","clock"],
+	"modules-right": ["tray", "pulseaudio","cpu","memory","network","battery","clock"],
     "hyprland/workspaces": {
         "format": "{name}",
         "on-click": "activate",
         "sort-by-number": true
-        },
+    },
+    "hyprland/window": {
+        "format": "  {}",
+        "rewrite": {
+            "(.*) — Firefox Developer Edition(.*)": "$1",
+            "(.*) - zsh": "> [$1]"
+        }
+    },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "{signalStrength}%  ",

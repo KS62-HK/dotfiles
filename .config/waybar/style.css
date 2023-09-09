@@ -1,7 +1,7 @@
 /* config and style stolen from https://github.com/Agonie0/hypr_file/blob/main/waybar */
 * {
 	border: none;
-	border-radius: 10;
+	border-radius: 10px;
     font-family: "Fusion Pixel 12px Monospaced ja", FiraCode Nerd Font;
 	font-size: 18px;
 	min-height: 10px;
@@ -43,7 +43,7 @@ window#waybar.hidden {
 	padding-right: 10px;
 	border-radius: 10px;
 	transition: none;
-    color: #252733;
+    color: #99a3d6;
 	background: #252733;
 }
 #tags {
@@ -185,7 +185,7 @@ window#waybar.hidden {
 }
 #cpu {
 	margin-top: 6px;
-	margin-left: 0px;
+	margin-left: 8px;
 	padding-left: 10px;
 	margin-bottom: 0px;
 	padding-right: 10px;
