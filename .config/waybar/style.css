@@ -7,13 +7,26 @@
 	min-height: 10px;
 }
 
+#window {
+	margin-top: 6px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 10px;
+	transition: none;
+    color: #99a3d6;
+	background: #252733;
+}
 window#waybar {
 	background: transparent;
 }
-
-window#waybar.hidden {
-	opacity: 0.2;
+window#waybar.empty #window {
+	color: rgba(0,0,0,0);
+	background: rgba(0,0,0,0);
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-top: 0px;
 }
+
 #workspaces button {
 	background: #252733;
 	padding: 0 5px;
@@ -36,15 +49,6 @@ window#waybar.hidden {
 	background: #474b63;
 	border: #e69e9e;
 	transition: none
-}
-#window {
-	margin-top: 6px;
-	padding-left: 10px;
-	padding-right: 10px;
-	border-radius: 10px;
-	transition: none;
-    color: #99a3d6;
-	background: #252733;
 }
 #tags {
 	margin-top: 6px;

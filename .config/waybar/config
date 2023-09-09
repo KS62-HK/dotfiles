@@ -13,7 +13,7 @@
         "sort-by-number": true
     },
     "hyprland/window": {
-        "format": "  {}",
+        "format": "  {title}",
         "rewrite": {
             "(.*) — Firefox Developer Edition(.*)": "$1",
             "(.*) - zsh": "> [$1]"
