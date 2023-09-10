@@ -20,11 +20,7 @@ window#waybar {
 	background: transparent;
 }
 window#waybar.empty #window {
-	color: rgba(0,0,0,0);
-	background: rgba(0,0,0,0);
-	padding-left: 0px;
-	padding-right: 0px;
-	margin-top: 0px;
+	opacity: 0;
 }
 
 #workspaces button {
