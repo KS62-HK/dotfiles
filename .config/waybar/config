@@ -15,7 +15,7 @@
     "hyprland/window": {
         "format": "  {title}",
         "rewrite": {
-            "(.*) — Firefox Developer Edition(.*)": "$1",
+            "(.*) — Ablaze Floorp(.*)": "$1",
             "(.*) - zsh": "> [$1]"
         }
     },
