@@ -1,0 +1,70 @@
+window {
+    font-family: FiraCode Nerd Font, monospace;
+    font-size: 12pt;
+    color: #f0f4cd; 
+    background-color: rgba(30, 30, 46, 0.5);
+}
+
+button {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20%;
+    border: none;
+    color: #ecf4ce;
+    text-shadow: none;
+    background-color: rgba(46, 45, 30, 0);
+    margin: 5px;
+    transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: rgba(68, 66, 49, 0.1);
+}
+
+button:focus {
+    background-color: #f2dc7a;
+    color: #2a2918;
+    text-shadow: none;
+}
+
+#lock {
+    background-image: image(url("./svgs/lock.svg"));
+}
+#lock:focus {
+    background-image: image(url("./svgs/lock-hover.svg"));
+}
+
+#logout {
+    background-image: image(url("./svgs/logout.svg"));
+}
+#logout:focus {
+    background-image: image(url("./svgs/logout-hover.svg"));
+}
+
+#suspend {
+    background-image: image(url("./svgs/sleep.svg"));
+}
+#suspend:focus {
+    background-image: image(url("./svgs/sleep-hover.svg"));
+}
+
+#shutdown {
+    background-image: image(url("./svgs/power.svg"));
+}
+#shutdown:focus {
+    background-image: image(url("./svgs/power-hover.svg"));
+}
+
+#reboot {
+    background-image: image(url("./svgs/restart.svg"));
+}
+#reboot:focus {
+    background-image: image(url("./svgs/restart-hover.svg"));
+}
+
+#cancel {
+	background-image: image(url("./svgs/cancel.svg"));
+}
+#cancel:focus {
+	background-image: image(url("./svgs/cancel-hover.svg"));
+}
