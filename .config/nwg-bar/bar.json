@@ -1,0 +1,22 @@
+[
+  {
+    "label": "Lock",
+    "exec": "gtklock -d",
+    "icon": "/home/ks62/.config/nwg-bar/svgs/lock.svg"
+  },
+  {
+    "label": "Logout",
+    "exec": "wayland-logout",
+    "icon": "/home/ks62/.config/nwg-bar/svgs/logout.svg"
+  },
+  {
+    "label": "Reboot",
+    "exec": "systemctl reboot",
+    "icon": "/home/ks62/.config/nwg-bar/svgs/restart.svg"
+  },
+  {
+    "label": "Shutdown",
+    "exec": "systemctl -i poweroff",
+    "icon": "/home/ks62/.config/nwg-bar/svgs/power.svg"
+  }
+]
